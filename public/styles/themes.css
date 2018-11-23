@@ -1,0 +1,135 @@
+/* color for water theme */
+nav.water{
+    background-color: #041b24;
+}
+
+#myVideo.water{
+    /* opacity: 1; */
+
+}
+
+section.water{
+    background-color: rgb(236, 242, 242);
+    color: #041b24;
+}
+
+div.themes.water{
+    margin-top: 10%;
+    color: #041b24;  
+    background-color:rgb(236, 242, 242); 
+}
+
+header.water{
+    /* background-color: rgba(125, 145, 196,.5); */
+    /* opacity: .3; */
+    color: #041b24;
+}
+
+div.water button{
+    background-color: #F79B77; 
+    color: rgb(236, 242, 242);    
+}
+
+footer.water{
+    background-color: #F79B77; 
+}
+
+footer.water p{
+    color: #041b24;
+
+}
+
+
+
+/* color for forest theme */
+nav.forest{
+    background-color: rgb(180, 196, 6);
+}
+
+#myVideo.forest{
+    opacity: .8;
+
+}
+
+section.forest{
+    background-color: rgb(236, 242, 242);
+    opacity: .9;
+    color:  #2e4600;  
+}
+
+div.themes.forest{
+    background: rgba(113, 61, 35, 0.1); 
+    /* #A2C523; */
+    color: rgb(236, 242, 242);    
+}
+
+header.forest{
+    color: #2e4600; 
+}
+
+
+header.mountain h1, h2{
+
+    margin: .25em;
+}
+
+div.forest button{
+    color: #486B00;
+    background-color: rgb(236, 242, 242);    
+}
+
+footer.forest{
+    background-color: rgb(45, 24, 13); 
+    opacity: 1;
+}
+
+
+/* color for mountain theme */
+nav.mountain{
+    background-color:  #363237;
+    /* background-image:
+    linear-gradient(
+      to bottom,
+      rgba(242, 246, 249, 0),
+      /* rgba(146, 191, 220, 1) 60% */
+      /* #363237 60%
+    ); */ 
+}
+
+#myVideo.mountain{
+    opacity: .8;
+}
+
+section.mountain{
+    background-color:#B7B8B6;
+    opacity: .8;
+    color:  rgb(52, 53, 51);
+}
+
+div.themes.mountain{
+    background: rgb(69, 70, 64);
+    color: rgba(236, 242, 242, 1);    
+}
+
+header.mountain{
+    color: #363237;  
+}
+
+header.mountain h1, h2{
+    margin: .25em;
+}
+
+div.mountain button{
+    color: rgb(67, 79, 6);
+    background-color: rgb(222, 225, 220);   
+}
+
+footer.mountain{
+    opacity: 1;
+    background-color: rgb(217, 225, 210);
+}
+
+footer.mountain p{
+    color: rgb(68, 80, 5);
+
+}
