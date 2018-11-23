@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 52em;
+    max-height: 49em;
+}
+
+#profile-img{
+    width: 8em;
+    margin-top: 1em;
+    border-radius: 3px;
+}
+
+.rubik{
+    font-family: 'Rubik', sans-serif;
+}
+
+.karla{
+    font-family: 'Karla', sans-serif;
+}
+
+
+header{
+    width: 100%;
+    height: 30%;
+}
+
+h1{
+    font-weight: bold;
+}
+
+header h1, h2{
+    font-size: 3em;
+    margin: 1em;
+}
+
+#myVideo {
+    position: fixed;
+    left: 10%;
+    right: 0;
+    top: 0;
+    min-width: 100%; 
+    width: 100%;
+    max-height: 100%;
+    z-index: -1;
+    /* opacity: .4; */
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 25%; */
+    padding: 2em;
+
+}
+
+nav ul{
+    margin: 4em 0em 0em 1em;
+    width: 10em;
+}
+nav li{
+    color: white;
+    padding: 1em;
+}
+
+body div{
+    display: flex;
+    flex-direction: column;
+}
+
+body section{
+    bottom: 2em;
+    height: 60%;
+    /* height: 100%; */
+}
+
+section p{
+    font-size: 1.5em;
+    padding: 2em;
+    line-height: 2em;
+
+}
+
+div.themes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+div.themes h3{
+    font-size: 1.5em;
+    /* margin-top: 1em; */
+}
+
+div.themes section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.themes button{
+    margin: 1em;
+    width: 6em; 
+    height: 2em;
+    border-radius: 1px;
+    font-size: 1em;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+}
+
+footer p{
+    color: rgb(252, 251, 251); 
+}
