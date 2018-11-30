@@ -2,13 +2,16 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 52em;
-    max-height: 49em;
+    /* height: 52em; */
+    /* max-height: 49em; */
 }
 
 #profile-img{
+    position: fixed;
+    top: 2em;
+    left: 1em;
     width: 8em;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     border-radius: 3px;
 }
 
@@ -23,26 +26,31 @@ body{
 
 header{
     width: 100%;
-    height: 30%;
+    height: 10%;
 }
 
-h1{
-    font-weight: bold;
-}
 
-header h1, h2{
+header h1{
     font-size: 3em;
-    margin: 1em;
+    margin: 1em .5em 1em 1em;
+    font-weight: bold;
+    margin-left: 1em;
 }
+
+header h2{
+        font-size: 3em;
+        margin: 1em .5em 1em 1em;
+}
+
 
 #myVideo {
     position: fixed;
-    left: 10%;
-    right: 0;
-    top: 0;
+    /* left: 10%; */
+    left: 5em;
+    top: -6em;
     min-width: 100%; 
     width: 100%;
-    max-height: 100%;
+    /* height: 60%; */
     z-index: -1;
     /* opacity: .4; */
 }
@@ -51,14 +59,20 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 25%; */
-    padding: 2em;
+    width: 10em;
+    padding: 6em;
+    /* height: 100%; */
+    /* position: fixed; */
+    
 
 }
 
 nav ul{
-    margin: 4em 0em 0em 1em;
-    width: 10em;
+    position: fixed;
+    left: 2em;
+    top: 14em;
+    /* margin: 4em 0em 0em 1em; */
+    /* width: 10em; */
 }
 nav li{
     color: white;
@@ -66,28 +80,22 @@ nav li{
 }
 
 body div{
-    display: flex;
-    flex-direction: column;
-}
-
-body section{
-    bottom: 2em;
-    height: 60%;
-    /* height: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 section p{
     font-size: 1.5em;
     padding: 2em;
     line-height: 2em;
-
+    overflow: scroll;
 }
 
 div.themes{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15%;
+    height: 10%;
 }
 
 div.themes h3{
@@ -119,4 +127,27 @@ footer{
 
 footer p{
     color: rgb(252, 251, 251); 
+}
+
+section.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4%;
+    padding: 4%;
+}
+
+section.projects > h2{
+    text-align: center;
+}
+
+section.projects > section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section.projects > div{
+    width: 30%;
 }
