@@ -1,0 +1,126 @@
+body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 2fr auto 3em;
+    grid-gap: 5px;
+    font-family: Rubik;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    height: 100%;
+    width: auto;
+    background:#E1B80D;
+    color: rgb(249, 255, 240);
+}
+
+nav ul li {
+    margin: 1em;
+}
+
+#profile-img{
+    height: 100px;
+}
+
+#background{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #867666;
+    z-index: -1;
+}
+
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+}
+
+h1, h2, h3{
+    color: rgb(249, 255, 240);
+}
+
+h1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 2.3em;
+}
+
+h2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h3{
+    line-height: 2em;
+    font-size: 1.2em;
+    grid-column: 2/3;
+    grid-row: 1/2;   
+}
+
+#buttons{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    line-height: 2em;
+    align-content: center; 
+}
+
+#buttons button{
+    margin: .2em;
+    width: 3em; 
+    height: 1.5em;
+    border-radius: 1px;
+    font-size: .9em;
+}
+
+#about-me{
+    display: flex;
+    align-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #D5C3AA;
+    line-height: 1.5em;
+}
+
+#about-me p{
+    margin: 1em;
+    font-size: 1.1em;
+}
+
+.projects{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects h2{
+    color: #88A550;ode 
+    width: 100%;
+    text-align: center;
+}
+
+.projects div{
+    margin: 1em;
+
+}
+
+
+footer{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: #EAE2D6;
+    height: auto;
+}
+
+
+
+
