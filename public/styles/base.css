@@ -15,6 +15,10 @@ body{
     border-radius: 3px;
 }
 
+.projects div {
+    width: 100px;
+} 
+
 .rubik{
     font-family: 'Rubik', sans-serif;
 }
