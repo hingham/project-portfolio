@@ -148,10 +148,16 @@ span{
 .project-text{
     width: 80%;
     font-family: rubik;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: rgb(154, 133, 107);
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
+
+
+/* div{
+    display: flex;
+    flex-direction: row;
+} */
 
 
 #sort{
@@ -187,7 +193,7 @@ div section{
 }
 
 div section * {
-    margin: 1em;
+    margin: .25em;
     color: rgb(36, 35, 35);
 
 }
@@ -198,6 +204,33 @@ a{
 
 
 @media only screen and (max-width:560px){
+
+    
+    *{
+        width: 100%;
+    }
+
+    #heading-one{
+        color: rgb(34, 54, 123);
+    }
+
+    #left{
+        height: 5em;
+    }
+
+    #projects{
+        height: 10em;
+    }
+
+    #right{
+        display: none;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+
+
     body{
         display: flex;
         flex-direction: column;
