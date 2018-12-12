@@ -26,12 +26,8 @@ if(this.id==='mountain'){
   console.log($('.water'));
   $(`.${curClass}`).removeClass(`${curClass}`).addClass(this.id);
 
-// console.log(this.val);
-// $('').removeClass('water');
+})
 
-  // if(this.id='btn-water'){
-  //     $('.water').removeClass('water')
-  // }
-  // $(this).removeClass('water');
-
+$('#project-screen button').on('click', function(){
+  
 })
