@@ -1,20 +1,19 @@
-body, html{
+html + body{
     width: 100%;
 }
 
 html{
-    background-color: rgb(249, 247, 244);
+    /* background-color: rgb(249, 247, 244); */
 }
 
 
 body{
     background-color:  rgb(223, 220, 216);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto auto ;
     grid-gap: 10px;
     font-family: Rubik;
-    margin-right: 10em;
 }
 
 
@@ -43,17 +42,23 @@ header{
 }
 
 #heading-one{
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: first baseline; */
-    grid-column: 2/4;
+    grid-column: 3/4;
     grid-row: 1/2;
-    text-align: right;
-    margin: 1em;
     z-index: 1;
-    color: rgb(205, 196, 184);
+    color: rgb(223, 220, 216);
+    width: 100%;
+    margin: 1em 0;
+    /* padding: 1em; */
+    
+}
 
+#heading-one h1{
+    text-align: right;
+    margin-right: .5em;
+}
+
+.offset-white{
+    background-color: rgb(250, 250, 248);
 }
 
 #heading-two {
@@ -61,22 +66,43 @@ header{
     grid-row: 1/2;
     color: rgb(34, 54, 123);
     padding: 1em;
-    background-color: rgb(247, 243, 237);
-
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row: 1;
+    grid-column: 4/5;
+}
 
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    color: rgb(34, 54, 123);
+    margin: .5em;
+}
 
-/* h1, h2, h3{
-    color: rgb(205, 196, 184);
-} */
+nav section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 0 .5em 0;
+    
+}
 
-h1{
-    font-size: 3em;
+nav img{
+    width: 50%;
+}
+
+h1, h2{
+    font-size: 2.5em;
 }
 
 h2{
-    font-size: 3em;
     font-weight: bold;
 }
 
@@ -89,11 +115,8 @@ h2{
 
 #about-me h2{
     color: rgb(34, 54, 123);
-    background-color: rgb(247, 243, 237);
     width: 100%;
     height: 100%;
-    /* text-align: right; */
-    /* padding-top: 1em; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,10 +127,11 @@ h2{
     grid-row: 2/3;
     font-size: 1em;
     line-height: 2em;
-   color: #867666;
-    width: 100%;
-    /* margin: 1em 0em 0em 40px; */
+    color: #867666;
+    width: 90%;
+    margin: 1em auto 1em auto;
 }
+
 
 #projects{
     display: flex;
@@ -117,7 +141,6 @@ h2{
     grid-row: 3/4;
     width: 100%;
     font-size: 1em;
-    background-color: rgb(247, 243, 237);
     color:rgb(154, 133, 107);
 }
 
@@ -126,27 +149,23 @@ span{
     height: 14em;
 }
 
+
+#left, #right {
+    width: 100%;
+    background-color: rgb(16, 41, 132);
+}
 #left{
     grid-column: 1/3;
     grid-row: 3/4;
-    /* height: 8em; */
-    width: 100%;
-    background-color: rgb(34, 54, 123);
-    /* background-color: rgb(232, 186, 36); */
 }
 
 #right{
     grid-column: 4/5;
     grid-row: 3/4;
-    /* height: 8em; */
-    width: 100%;
-    background-color: rgb(34, 54, 123);
-
-    /* background-color: rgb(232, 186, 36); */
 }
 
 .project-text{
-    width: 80%;
+    width: 50%;
     font-family: rubik;
     font-size: 1.2em;
     color: rgb(154, 133, 107);
@@ -154,32 +173,22 @@ span{
 }
 
 
-/* div{
+#sort, #book-app, #shuffle{
     display: flex;
     flex-direction: row;
-} */
-
+}
 
 #sort{
-    display: flex;
-    flex-direction: row;
-    background: rgb(254, 253, 252);
     grid-column: 1/3;
     grid-row: 4/5;
 }
 
 #book-app{
-    display: flex;
-    flex-direction: row;
-    background: rgb(254, 253, 252);
     grid-column: 3/5;
     grid-row: 4/5;
 }
 
 #shuffle{
-    display: flex;
-    flex-direction: row;
-    background: rgb(254, 253, 252);
     grid-column: 1/3;
     grid-row: 5/6;
 }
@@ -195,48 +204,155 @@ div section{
 div section * {
     margin: .25em;
     color: rgb(36, 35, 35);
-
+    width: 70%;
 }
 
 a{
     font-size: .8em;
 }
 
+#resume-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 6/7;
+    background-color: rgb(16, 41, 132);
+    height: 10em;
+}
 
-@media only screen and (max-width:560px){
+#resume-header h2{
+    color: rgb(247, 243, 237);
+}
 
-    
-    *{
+#resume{
+    grid-column: 3/5;
+    grid-row: 6/7;
+}
+
+
+embed{
+    margin-top: 2em;
+    width: 500px;
+    height: 700px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 41, 132);
+    color: rgb(247, 243, 237);
+    grid-row: 8;
+    grid-column: 1/5;
+    padding: 1em 0em 1em 0em;
+}
+
+
+@media only screen and (max-width:900px){
+
+    /* * {
         width: 100%;
+    } */
+
+    body{
+        background-color:  rgb(247, 243, 237);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #heading-one, #heading-two{
+        font-size: .8em;
+        text-align: left;
+       margin-left: 1em;
     }
 
     #heading-one{
         color: rgb(34, 54, 123);
+        background-color: rgb(247, 243, 237);
+
     }
+
+    #about-me{
+        background-color: rgb(34, 54, 123);
+        width: 100%;
+
+    }
+
+    #about-me h2{
+        font-size: 1.5em;
+        justify-content: flex-start;
+        height: 2em;
+        color:rgb(247, 243, 237);
+        width: auto;
+        background-color: rgb(34, 54, 123);
+        margin-left: 1em;
+    }
+
+    #details-me{
+        width: 80%;
+        margin: auto;
+    }
+    
+   
+    div img{
+        width: 50%;
+        margin-top: 2em;
+    }
+
 
     #left{
         height: 5em;
     }
 
     #projects{
-        height: 10em;
+        text-align: center;
+        color: rgb(34, 54, 123);
+        height: 5em;
     }
 
     #right{
         display: none;
     }
-    div{
-        display: flex;
-        flex-direction: column;
+
+    #resume-header{
+        width: 100%;
     }
 
+    div img{
+       width: auto; 
+    }
 
-    body{
+}
+
+
+
+@media only screen and (max-width:560px){
+
+
+    #sort, #book-app, #shuffle{
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
+
+    .project-text{
+        width: 90%;
+        text-align: center;
+    }
+
+    div img{
+        width: 60%; 
+     }
+    
+    embed{
+    margin-top: 2em;
+    width: 400px;
+    } 
 }
 
 
